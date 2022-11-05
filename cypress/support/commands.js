@@ -46,6 +46,6 @@ Cypress.Commands.add('limpaCarrinhoComUmProduto', () => {
     
     //cartPage.acessar()
     cartPage.removerProduto()
-    cartPage.testaMensagemVazio()
+    cartPage.testaMensagemCarrinhoVazio()
 
 })

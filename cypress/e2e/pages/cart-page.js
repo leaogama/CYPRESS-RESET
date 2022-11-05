@@ -3,8 +3,8 @@ class CartPage {
 
 //url = 'https://cena.reset.cwi.com.br/index.php/cart/'
 linkRemoverProduto = '.cart_item > .product-remove'
-linkmensagemVazio =  '.cart-empty.woocommerce-info'
-txtMensagemVazio = 'Seu carrinho está vazio.'
+linkTxtCarrinhVazio =  '.cart-empty.woocommerce-info'
+txtCarrinhoVazio = 'Seu carrinho está vazio.'
 //acessar(){
 //    cy.visit(url)
 //}
@@ -15,8 +15,8 @@ removerProduto(){
     
 }
 
-testaMensagemVazio(){
-    cy.get(this.linkmensagemVazio).should('have.text', this.txtMensagemVazio)
+testaMensagemCarrinhoVazio(){
+    cy.get(this.linkTxtCarrinhVazio).should('have.text', this.txtCarrinhoVazio)
 }
 
 }

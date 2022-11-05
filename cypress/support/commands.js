@@ -26,9 +26,9 @@
 
 /// <reference types="cypress" />
 
-import HomePage from '../e2e/pages/home-page'
-import ProductPage from '../e2e/pages/product-page'
-import CartPage from '../e2e/pages/cart-page'
+import HomePage from '../pages/home-page'
+import ProductPage from '../pages/product-page'
+import CartPage from '../pages/cart-page'
 
 const homePage = new HomePage()
 const productPage = new ProductPage()

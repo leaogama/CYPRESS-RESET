@@ -1,5 +1,5 @@
 import { Given, When, Then } from "@badeball/cypress-cucumber-preprocessor";
-import CartPage from '../../e2e/pages/cart-page'
+import CartPage from '../../pages/cart-page'
 
 const cartPage = new CartPage()
 

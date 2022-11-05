@@ -23,3 +23,29 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+/// <reference types="cypress" />
+
+import HomePage from '../e2e/pages/home-page'
+import ProductPage from '../e2e/pages/product-page'
+import CartPage from '../e2e/pages/cart-page'
+
+const homePage = new HomePage()
+const productPage = new ProductPage()
+const cartPage = new CartPage()
+
+Cypress.Commands.add('gerarCarrinhComUmProduto', () => {
+
+    homePage.acessar()
+    homePage.detalharPrimeiroProduto()
+    productPage.comprarAgora()
+
+})
+
+Cypress.Commands.add('limpaCarrinhoComUmProduto', () => {
+    
+    //cartPage.acessar()
+    cartPage.removerProduto()
+    cartPage.testaMensagemVazio()
+
+})

@@ -18,6 +18,14 @@
   },
   "homepage": "https://github.com/leaogama/CYPRESS-RESET#readme",
   "dependencies": {
-    "cypress": "^10.11.0"
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.3"
+  },
+  "devDependencies": {
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.11.0",
+    "esbuild": "^0.15.13"
+  },
+  "cypress-cucumber-preprocessor": {
+    "stepDefinitions": "cypress/support/step_definitions/**/*.{js,ts}"
   }
 }
